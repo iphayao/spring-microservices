@@ -42,7 +42,7 @@ public class SearchComponent {
 
         Flight flight = flightRepository.findByFlightNumberAndFlightDate(flightNumber, flightDate);
         Inventory inv = flight.getInventory();
-        inv.setCount(inventory);;
+        inv.setCount(inventory);
 
         flightRepository.save(flight);
     }
